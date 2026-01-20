@@ -8,7 +8,7 @@
     <title>Mohd Shadman | Backend Engineer (Java, Spring Boot, Cloud)</title>
 
     <meta name="description"
-            content="Backend Engineer with 2+ years of experience building scalable Java and Spring Boot microservices for fintech and gaming platforms. Experienced with Kafka, Redis, MySQL, Docker, Kubernetes, AWS, and GCP.">
+            content="Backend Engineer with 2+ years of experience building scalable Java and Spring Boot microservices. Experienced with Kafka, Redis, MySQL, Docker, Kubernetes, AWS, and GCP.">
 
     <meta name="author" content="Mohd Shadman">
     <meta name="robots" content="index, follow">
@@ -327,7 +327,7 @@
                 <a href="https://www.linkedin.com/in/leoshad9" target="_blank">🔗 linkedin.com/in/leoshad9</a>
             </div>
                <a
-                href="https://drive.google.com/uc?export=download&id=1n9Usuq4QhnmvBeRRRwsfXiwGwgTTxtk-"
+                href="https://drive.google.com/uc?export=download&id=1AuAZooV2rUTbVWDbkT3q6QtgYkuYqzPu"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="download-btn"
@@ -339,18 +339,11 @@
         
         <div class="content">
             <div class="section">
-                <h2 class="section-title">Professional Summary</h2>
-                <p style="font-size: 14px; line-height: 1.6; color: #555; margin-bottom: 0;">
-                    Senior Backend Engineer with 2+ years of hands-on experience designing and scaling high-traffic Java microservices for fintech and gaming. Expert in Spring Boot, Apache Kafka, MySQL optimization, GCP/AWS cloud infrastructure, and system resilience patterns. Demonstrated impact: 45% latency reduction, 30% database optimization, ≥99.9% uptime. Proven ability to architect production-grade systems, mentor junior engineers, and collaborate cross-functionally to deliver business-critical features on schedule.
-                </p>
-            </div>
-            
-            <div class="section">
                 <h2 class="section-title">Core Skills</h2>
                 <div class="skills-grid">
                     <div class="skill-item">
                         <div class="skill-category">Backend Development</div>
-                        <div class="skill-list">Java 17, Spring Boot (MVC, Security, Data JPA, RestTemplate, WebClient), Microservices, REST APIs, Asynchronous & non-blocking programming, Multithreading</div>
+                        <div class="skill-list">Java, Spring Boot (MVC, Security, Data JPA, RestTemplate, WebClient), Microservices, REST APIs, Asynchronous & non-blocking programming, Multithreading</div>
                     </div>
                     <div class="skill-item">
                         <div class="skill-category">Messaging & Streaming</div>
@@ -358,7 +351,7 @@
                     </div>
                     <div class="skill-item">
                         <div class="skill-category">Cloud & DevOps</div>
-                        <div class="skill-list">GCP (Cloud Run, Cloud Build, Buildpacks), AWS, Docker, Kubernetes, CI/CD</div>
+                        <div class="skill-list">GCP (Cloud Run, Cloud Build, Artifact Registry), AWS (EC2, RDS), Docker, Kubernetes, CI/CD</div>
                     </div>
                     <div class="skill-item">
                         <div class="skill-category">Databases & Caching</div>
@@ -370,7 +363,7 @@
                     </div>
                     <div class="skill-item">
                         <div class="skill-category">Testing & Observability</div>
-                        <div class="skill-list">JUnit, Mockito, Postman, Swagger, Log4j2</div>
+                        <div class="skill-list">JUnit, Mockito, Postman, Log4j2</div>
                     </div>
                     <div class="skill-item">
                         <div class="skill-category">Tools</div>
@@ -390,17 +383,14 @@
                     <ul class="achievements">
                         <li>Architected and deployed a production-grade KYC backend for Aadhaar & PAN identity verification using Spring WebClient; reduced p95 latency by ~45%, supported 500+ req/s, and ensured regulatory compliance for financial services onboarding.</li>
                         <li>Migrated 3 legacy Servlet modules to Spring Boot, reducing deployment time by ~60% and cutting critical production bugs by ~50%.</li>
-                        <li>Designed 12+ REST APIs for gameplay features; achieved p99 latency <150ms and ≥99.95% availability during peak traffic.</li>
+                        <li>Designed and optimized 12+ stateless REST APIs with clear domain boundaries, backed by normalized schemas and tuned SQL queries, meeting defined latency and availability SLOs (p99 < 150 ms, 99.95% availability) under peak traffic.</li>
                         <li>Upgraded the backend stack from Java 8 to Java 17 and migrated build configuration from Gradle to Maven, improving build reliability and CI compatibility.</li>
-                        <li>Built secure, containerized CI/CD pipelines using Docker, Google Cloud Build, and Cloud Native Buildpacks with automated vulnerability scanning (OWASP A06 compliance); published hardened images to Artifact Registry and deployed services to Cloud Run and Kubernetes, reducing deployment overhead by ~70%.</li>
+                        <li>Built secure, immutable containerized CI/CD pipelines using Docker, Google Cloud Build, and Cloud Native Buildpacks; published hardened images to Artifact Registry and deployed services to Cloud Run and Kubernetes, reducing deployment overhead by ~70%.</li>
                         <li>Developed LiveOps systems enabling product team to configure, schedule, and manage time-bound in-game events, improving asset coordination and operational efficiency.</li>
-                        <li>Implemented Apache Kafka for asynchronous event processing (transactions, gameplay events), improving system decoupling and throughput.</li>
-                        <li>Designed normalized database schemas and optimized 25+ high-frequency SQL queries through refactoring, indexing, and execution-plan analysis, resulting in ~35% query latency reduction and ~28% database CPU utilization improvement while preserving referential integrity.</li>
-                        <li>Designed and implemented a Redis caching strategy for hot data (user profiles, game configurations, leaderboards), reducing database load by ~30–35% and improving p95 API latency by ~25–30% under peak traffic.</li>
+                        <li>Implemented Apache Kafka for asynchronous event processing (transactions, gameplay events) with idempotent consumers and retry-safe workflows, using Redis-based caching and database constraints to prevent duplicate processing under at-least-once delivery; reduced database load by ~30–35% and improved p95 latency by ~25–30% under peak traffic.</li>
                         <li>Integrated Google BigQuery for transaction logging across 8 microservices, reducing incident investigation time from ~4 hours to ~30 minutes.</li>
-                        <li>Implemented OWASP Top 10 security controls: Spring Security with JWT/OAuth 2.0 authentication, role-based access control (RBAC), CSRF protection, and parameterized JPA queries to prevent injection attacks across backend services.</li>
-                        <li>Strengthened supply chain security by performing OWASP A06-compliant dependency vulnerability scanning using OWASP Dependency-Check (Maven) and Red Hat Dependency Analytics; identified and remediated 20+ critical/high CVEs across Spring Boot, Kafka, and cloud libraries, integrating automated scanning into Google Cloud Build.</li>
-                        <li>Applied Resilience4j fault-tolerance patterns (circuit breaker, retry policies) to external API integrations, improving system resilience during third-party service failures.</li>
+                        <li>Implemented OWASP Top 10 security controls (Spring Security, JWT/OAuth 2.0, RBAC, CSRF) and OWASP A06-compliant dependency vulnerability scanning, remediating 20+ critical/high CVEs and strengthening application and supply-chain security.</li>
+                        <li>Applied Resilience4j fault-tolerance patterns (timeouts, retries, circuit breakers) to external API integrations, preventing cascading failures and improving system resilience during third-party outages.</li>
                         <li>Collaborated cross-functionally with Android, QA, and Product teams to align backend features, troubleshoot issues, and enable smooth production releases.</li>
                     </ul>
                 </div>
@@ -411,9 +401,9 @@
                         <span class="job-date">Dec 2022 – May 2024</span>
                     </div>
                     <ul class="achievements">
-                        <li>Supported 6 Java-based backend services in production, maintaining 99.92% uptime and resolving P1 incidents within SLA (avg. 47 minutes).</li>
+                        <li>Supported 6 Java-based backend services in production, maintaining 99.92% uptime and resolving P1 incidents within SLA (average resolution time: 47 minutes).</li>
                         <li>Implemented 5 permanent fixes for critical production incidents, including transaction failure resolution and deadlock prevention through query optimization and lock timeout tuning.</li>
-                        <li>Optimized AWS infrastructure stack (EC2, RDS, CloudWatch) by implementing automated monitoring dashboards and log aggregation; reduced incident detection time by ~20% and improved application health visibility across production services.</li>
+                        <li>Optimized AWS infrastructure (EC2, RDS, CloudWatch) by implementing automated monitoring dashboards and log aggregation, reducing incident detection time by ~20% and improving production visibility.</li>
                         <li>Optimized Spring Data JPA repository queries by refactoring JPQL, resolving N+1 issues, and improving entity mappings; achieved ~30% performance improvement, reducing DB CPU from ~85% to ~62%.</li>
                         <li>Enhanced observability using Log4j2 structured logging, reducing mean-time-to-resolution (MTTR) by ~35%.</li>
                         <li>Implemented JWT-based authentication across 4+ REST APIs, conducted regression testing using Postman, and improved API security posture through parameterized inputs and CORS validation.</li>
