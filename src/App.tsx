@@ -17,20 +17,24 @@ const Button = ({
   children: ReactNode;
   href: string;
   primary?: boolean;
-}) => (
-  <a
-    href={href}
-    target={href.startsWith('mailto:') ? '_blank' : undefined}
-    rel="noopener"
-    className={`inline-flex items-center rounded-lg px-5 py-3 text-sm font-semibold transition hover:-translate-y-0.5 ${
-      primary
-        ? 'bg-violet-500 text-white shadow-lg shadow-violet-500/20 hover:bg-violet-400'
-        : 'border border-white/15 text-stone-200 hover:border-violet-400'
-    }`}
-  >
-    {children}
-  </a>
-);
+}) => {
+  const isExternal =
+    href.startsWith('http://') || href.startsWith('https://');
+  return (
+    <a
+      href={href}
+      target={isExternal ? '_blank' : undefined}
+      rel={isExternal ? 'noopener noreferrer' : undefined}
+      className={`inline-flex items-center rounded-lg px-5 py-3 text-sm font-semibold transition hover:-translate-y-0.5 ${
+        primary
+          ? 'bg-violet-500 text-white shadow-lg shadow-violet-500/20 hover:bg-violet-400'
+          : 'border border-white/15 text-stone-200 hover:border-violet-400'
+      }`}
+    >
+      {children}
+    </a>
+  );
+};
 
 const Section = ({
   id,
@@ -246,7 +250,7 @@ function App() {
 
                 {project.liveUrl && (
                   <Button href={project.liveUrl} primary>
-                    Live Demo
+                    Live
                   </Button>
                 )}
               </div>

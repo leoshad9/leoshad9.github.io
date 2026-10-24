@@ -55,7 +55,7 @@ export const experiences: Experience[] = [
     id: 'blacklight-gaming',
     company: 'BlackLight Gaming',
     location: 'Noida, India',
-    position: 'Backend Developer',
+    position: 'Associate Backend Developer',
     period: '2025 - 2025',
     technologies: ['Java', 'Spring Boot', 'Kafka', 'Redis', 'Docker', 'Kubernetes', 'GCP', 'BigQuery'],
     achievements: [
