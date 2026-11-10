@@ -89,18 +89,19 @@ export const experiences: Experience[] = [
 ];
 
 export const skills: Skill[] = [
-  { category: 'Programming Languages', items: ['Java', 'Python', 'JavaScript', 'TypeScript'] },
-  { category: 'Backend Frameworks & Libraries', items: ['Spring Framework (Spring Boot, Spring MVC, Spring Security)', 'Node.js', 'NestJS', 'FastAPI'] },
-  { category: 'Data Processing & GUI', items: ['NumPy', 'Matplotlib', 'Tkinter'] },
-  { category: 'Persistence & ORM', items: ['Spring Data JPA', 'Spring JDBC (JdbcTemplate)', 'Spring Data JDBC', 'Spring Data R2DBC', 'Spring Data Redis', 'Hibernate', 'TypeORM'] },
-  { category: 'Backend Architecture', items: ['Monolithic Architecture', 'Microservices', 'REST APIs', 'SOAP', 'Domain-Driven Design (DDD)', 'Clean Architecture', 'Event-Driven Architecture', 'CQRS', 'Saga Pattern', 'Outbox Pattern'] },
-  { category: 'Concurrency', items: ['Executor Framework', 'CompletableFuture', 'Synchronization', 'Concurrent Collections', 'Virtual Threads', 'ThreadPoolTaskExecutor'] },
-  { category: 'Messaging & Streaming', items: ['Apache Kafka'] },
-  { category: 'Cloud & DevOps', items: ['Amazon Web Services (AWS)', 'AWS EC2', 'AWS Systems Manager (SSM)', 'Google Cloud Platform (GCP)', 'Docker', 'Docker Compose', 'Kubernetes', 'Nginx', 'Amazon Elastic Kubernetes Service (EKS)', 'Google Kubernetes Engine (GKE)', 'Amazon RDS', 'Google Cloud SQL', 'Amazon Redshift', 'Google BigQuery', 'Amazon CloudWatch', 'Google Cloud Logging'] },
-  { category: 'Databases & Caching', items: ['MySQL', 'PostgreSQL', 'Redis', 'Caffeine'] },
-  { category: 'Security & Identity', items: ['JWT', 'OAuth 2.0', 'OpenID Connect (OIDC)', 'Keycloak', 'HashiCorp Vault'] },
-  { category: 'Testing & Observability', items: ['JUnit 5', 'Mockito', 'Jest', 'Supertest', 'Pytest', 'Log4j2', 'Pino', 'OpenTelemetry', 'Prometheus', 'Grafana', 'Resilience4j'] },
-  { category: 'Tools', items: ['Git', 'GitHub', 'GitLab', 'Maven', 'Gradle', 'Node Package Manager (npm)', 'GitHub Actions', 'Jenkins', 'Bash', 'SonarQube', 'OpenAPI (Swagger)', 'Postman'] },
+  { category: 'Programming Languages', items: ['Java', 'Python', 'JavaScript', 'TypeScript', 'SQL'] },
+  { category: 'Backend Frameworks & Libraries', items: ['Spring Framework (Spring Boot, Spring MVC, Spring Security, Spring WebFlux)', 'Node.js', 'NestJS', 'FastAPI', 'NumPy', 'Matplotlib'] },
+  { category: 'API Clients & Service Communication', items: ['RestClient', 'RestTemplate', 'WebClient', 'Feign Client', 'gRPC', 'REST APIs', 'SOAP'] },
+  { category: 'Persistence, Databases & Caching', items: ['Spring Data JPA', 'Spring JDBC', 'Spring Data JDBC', 'Spring Data R2DBC', 'Hibernate', 'jOOQ', 'TypeORM', 'MySQL', 'PostgreSQL', 'Redis', 'Caffeine', 'Liquibase', 'Flyway'] },
+  { category: 'Backend Architecture & Design Patterns', items: ['Monolithic Architecture', 'Microservices', 'Domain-Driven Design (DDD)', 'Clean Architecture', 'Event-Driven Architecture', 'CQRS', 'Saga', 'Transactional Outbox', 'Factory', 'Builder', 'Strategy', 'Adapter', 'Facade', 'Decorator', 'Observer'] },
+  { category: 'Concurrency & Scheduling', items: ['Java Concurrency API (ExecutorService, CompletableFuture, Synchronization, Concurrent Collections, Virtual Threads)', 'ThreadPoolTaskExecutor', 'Spring @Async', 'Spring Scheduling', 'ShedLock'] },
+  { category: 'Messaging & Streaming', items: ['Apache Kafka', 'RabbitMQ'] },
+  { category: 'Resilience & Fault Tolerance', items: ['Spring Retry', 'Resilience4j'] },
+  { category: 'API Gateway & Management', items: ['Kong', 'Apigee'] },
+  { category: 'Cloud & DevOps', items: ['AWS (EC2, SSM, ECR, EKS, RDS, Redshift, CloudWatch, IAM, Secrets Manager, KMS, SQS, SNS)', 'GCP (Cloud Run, GKE, Cloud SQL, BigQuery, Cloud Logging, IAM, Secret Manager, Cloud KMS, Pub/Sub)', 'Docker', 'Podman', 'Kubernetes', 'Helm', 'Terraform', 'Nginx', 'Envoy'] },
+  { category: 'Security & Identity', items: ['JWT', 'OAuth 2.0', 'OpenID Connect (OIDC)', 'SAML 2.0', 'MFA', 'LDAP', 'Keycloak', 'Mutual TLS (mTLS)', 'SPIFFE/SPIRE', 'Microsoft Active Directory (AD DS)', 'HashiCorp Vault'] },
+  { category: 'Testing, Logging & Observability', items: ['JUnit', 'Mockito', 'Spring Cloud Contract', 'Jest', 'Supertest', 'Logback', 'Log4j 2', 'SLF4J', 'Pino', 'Prometheus', 'Grafana', 'Splunk', 'Dynatrace'] },
+  { category: 'Tools', items: ['Git', 'GitHub', 'GitLab', 'Maven', 'Gradle', 'Node Package Manager (npm)', 'GitHub Actions', 'Bash', 'SonarQube', 'OpenAPI (Swagger)', 'Postman'] },
 ];
 
 export const projects: Project[] = [
