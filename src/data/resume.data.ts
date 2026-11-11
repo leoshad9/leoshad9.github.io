@@ -111,7 +111,7 @@ export const projects: Project[] = [
     title: 'MedOps',
     subtitle: 'Hospital Operations Management Platform',
     description: 'A full-stack healthcare operations platform supporting secure clinical workflows, appointment management, and automated report summarization.',
-    technologies: ['Java 21', 'Spring Boot', 'React', 'PostgreSQL', 'Redis', 'Kafka', 'FastAPI', 'Docker', 'AWS EC2', 'GitHub Actions'],
+    technologies: ['Java', 'Spring Boot', 'React', 'PostgreSQL', 'Redis', 'Kafka', 'FastAPI', 'Docker', 'AWS EC2', 'GitHub Actions'],
     features: [
       'Built JWT authentication, role-based access control, patient/doctor workflows, appointments, prescriptions, clinical reports, and billing.',
       'Designed the backend as a modular monolith with business-focused modules and concurrency-safe appointment booking.',
